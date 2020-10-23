@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+    <title>SEE?</title>
+</head>
+<style>
+    #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:2;
+  opacity: 100%;
+}
+.ocean{
+    z-index: inherit 3;;
+    height:100%;
+    width: 100%;
+    opacity: .9;
+    }
+
+</style>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://res.cloudinary.com/allhailmc/video/upload/v1601328991/Eyez/eyezcloudinary/background%20videos/naga%20videos/logical_endvideo_pe0dht.mov" type="video/mp4">
+      </video>
+      
+      
+    <div class= "ocean">
+        <img src ="https://res.cloudinary.com/allhailmc/image/upload/v1600986863/Eyez/eyezcloudinary/background%20videos/4.jpg">
+    </div>
+    
+</body>
+<script>
+const sound1 = new Howl({ src: 'https://res.cloudinary.com/allhailmc/video/upload/v1601329014/Eyez/eyezcloudinary/background%20videos/naga%20videos/logical_endvideo_cswfhj.mp3' });
+console.log(sound1);
+const playSound = (sound1) => {
+    sound1.play();
+    }
+playSound(sound1)
+const playsoundrepeat = () => {
+    if (!sound.playing()){
+        sound1.play();
+    } else {
+        sound1.play()
+    }
+}
+    
+    playsoundrepeat()
+</script>
+
+</html>
